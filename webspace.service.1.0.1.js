@@ -23,7 +23,7 @@ self.addEventListener("fetch", function(event) {
     event.respondWith(
       (async () => {
         try {
-          // First, try to use the navigation preload response if it's supported.
+          // First, try to use the navigation preload response if it's supported
           const preloadResponse = await event.preloadResponse;
           if (preloadResponse) {
             return preloadResponse;
